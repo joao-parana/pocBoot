@@ -6,47 +6,38 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
-import br.cepel.soma.poc1.models.String;
-
 @Entity
-public class Category
-{
+public class Category {
 
-   @Id
-   @GeneratedValue(strategy = GenerationType.IDENTITY)
-   private Integer id;
-   @ManyToOne
-   private String name;
-   @ManyToOne
-   private String description;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
+	@ManyToOne
+	private String name;
+	@ManyToOne
+	private String description;
 
-   public Integer getId()
-   {
-      return this.id;
-   }
+	public Integer getId() {
+		return this.id;
+	}
 
-   public void setId(Integer id)
-   {
-      this.id = id;
-   }
+	public void setId(Integer id) {
+		this.id = id;
+	}
 
-   public String getName()
-   {
-      return this.name;
-   }
+	public String getName() {
+		return this.name;
+	}
 
-   public void setName(String name)
-   {
-      this.name = name;
-   }
+	public void setName(String name) {
+		this.name = name;
+	}
 
-   public String getDescription()
-   {
-      return this.description;
-   }
+	public String getDescription() {
+		return this.description;
+	}
 
-   public void setDescription(String description)
-   {
-      this.description = description;
-   }
+	public void setDescription(String description) {
+		this.description = description;
+	}
 }
